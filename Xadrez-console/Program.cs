@@ -44,12 +44,8 @@ namespace Xadrez_console
                     }
                     
                 }
-
-                /*PosicaoXadrez posicaoXadrez = new PosicaoXadrez('c', 7);
-
-                Console.WriteLine(posicaoXadrez);
-
-                Console.WriteLine(posicaoXadrez.ToPosicao());*/
+                Console.Clear();
+                Tela.ImprimirPartida(partida);
             }
             catch (TabuleiroException ex)
             {
