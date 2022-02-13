@@ -34,7 +34,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(posicao.Linha - 1, posicao.Linha - 1);
+                posicao.DefinirValores(posicao.Linha - 1, posicao.Coluna - 1);
             }
 
             //Nordeste
@@ -46,7 +46,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(posicao.Linha - 1, posicao.Linha + 1);
+                posicao.DefinirValores(posicao.Linha - 1, posicao.Coluna + 1);
             }
 
             //Sudeste
@@ -58,11 +58,11 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(posicao.Linha + 1, posicao.Linha + 1);
+                posicao.DefinirValores(posicao.Linha + 1, posicao.Coluna + 1);
             }
 
             //Sudoeste
-            posicao.DefinirValores(Posicao.Linha + 1, Posicao.Coluna + 1);
+            posicao.DefinirValores(Posicao.Linha + 1, Posicao.Coluna  - 1);
             while (Tabuleiro.PosicaoValida(posicao) && PodeMover(posicao))
             {
                 movimentos[posicao.Linha, posicao.Coluna] = true;
@@ -70,7 +70,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(posicao.Linha + 1, posicao.Linha - 1);
+                posicao.DefinirValores(posicao.Linha + 1, posicao.Coluna - 1);
             }
 
             return movimentos;

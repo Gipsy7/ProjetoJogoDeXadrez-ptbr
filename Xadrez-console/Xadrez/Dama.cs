@@ -85,7 +85,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(posicao.Linha - 1, posicao.Linha - 1);
+                posicao.DefinirValores(posicao.Linha - 1, posicao.Coluna - 1);
             }
 
             //Nordeste
@@ -97,7 +97,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(posicao.Linha - 1, posicao.Linha + 1);
+                posicao.DefinirValores(posicao.Linha - 1, posicao.Coluna + 1);
             }
 
             //Sudeste
@@ -109,7 +109,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(posicao.Linha + 1, posicao.Linha + 1);
+                posicao.DefinirValores(posicao.Linha + 1, posicao.Coluna + 1);
             }
 
             //Sudoeste
@@ -121,7 +121,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(posicao.Linha + 1, posicao.Linha - 1);
+                posicao.DefinirValores(posicao.Linha + 1, posicao.Coluna - 1);
             }
 
             return movimentos;
